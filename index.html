@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="favicon" href="">
+    <title>Rockets Team</title>
+    <link rel="icon" href="./assets/profile/Rockets1.png" type="image/icon type">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- bootstrap -->
+    <!-- <link rel="stylesheet" href="./css/bootstrap.min.css"> -->
+    <!-- our css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/skin/color-1.css">
+    <!-- Style Switcher -->
+    <link rel="stylesheet" href="./css/skin/color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="./css/skin/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="./css/skin/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="./css/skin/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="./css/skin/color-5.css" class="alternate-style" title="color-5" disabled>
+    <link rel="stylesheet" href="./css/style-switcher.css">
+
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("ez1tFzOtOjE9QtJDV");
+            console.log('EmailJS initialized');
+        })();
+    </script>
+</head>
+
+<body class="dark">
+    <!-- Main Container Start -->
+    <div class="main-container">
+        <div class="aside">
+            <div class="logo" onclick="displaySection('home')">
+                <a href="#"><span></span>Rockets</a>
+            </div>
+            <div class="nav-toggler">
+                <span></span>
+            </div>
+            <ul class="nav">
+                <li><a class="nav-link nav-home active" href="#" onclick="displaySection('home')"><i
+                            class="fa fa-home"></i><span>Home</span></a></li>
+                <li><a class="nav-link nav-about" href="#" onclick="displaySection('about')"><i
+                            class="fa fa-users"></i><span>About Us</span></a></li>
+                <li><a class="nav-link nav-service" href="#" onclick="displaySection('service')"><i
+                            class="fa fa-rocket"></i><span>Our Services</span></a></li>
+                <li><a class="nav-link nav-project" href="#" onclick="displaySection('project')"><i
+                            class="fa fa-briefcase"></i><span>Our Projects</span></a></li>    
+                <li><a class="nav-link nav-contact" href="#" onclick="displaySection('contact')"><i
+                            class="fa fa-comments"></i><span>Contact</span></a></li>
+            </ul>
+            <div class="aside-contact-info">
+                <!-- <div class="aside-contact-info-container">
+                    <div class="icon"><a href="https://www.linkedin.com/company/rockets-team" target="_blank"
+                            rel="noopener noreferrer"> <i class="fab fa-linkedin-in"></i></a></div> -->
+                <!-- </div> -->
+                <div class="aside-contact-info-container">
+                    <div class="icon"><a href="tel:01114232202" target="_blank"><i class="fa fa-phone"></i></a></div>
+                </div>
+                <div class="aside-contact-info-container">
+                    <div class="icon"><a href="https://wa.me/01114232202" target="_blank"><i class="fab fa-whatsapp"></i></a></div>
+                </div>
+                <div class="aside-contact-info-container copying-container email-container">
+                    <div class="icon"><i class="fa fa-envelope"
+                            onclick="copyToClipboard('alxrockets@gmail.com','email-container')"></i></div>
+                    <div class="message-tip"><i class="fas fa-check"></i> Copied!</div>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <!-- Home Section Start -->
+            <section class="home section" id="home">
+                <div class="container">
+                    <div class="row">
+                        <div class="home-info padd-15">
+                            <h3 class="hello">Welcome to <span class="name">Rockets Team</span></h3>
+                            <h3 class="my-profession">We are <span class="typing">Innovators in Technology</span></h3>
+                            <p>Welcome to Rockets Team's portfolio! We are a dynamic group of tech enthusiasts and professionals dedicated to pushing the boundaries of innovation. With expertise in software development, artificial intelligence, and cutting-edge solutions, we transform complex challenges into elegant solutions.</p>
+                            <p>Our team combines technical excellence with creative thinking to deliver exceptional results. Whether it's developing robust web applications, creating intelligent AI systems, or building scalable cloud solutions, we're committed to excellence in every project we undertake.</p>
+                            <a href="#about" onclick="displaySection('about')"
+                                class="btn hire-me">See Our Journey</a>
+                        </div>
+                        <div class="home-img padd-15">
+                            <img src="assets/profile/profile1.jpg" alt="Team Photo">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Home Section End -->
+            <!-- About Section Start -->
+            <section class="about section" id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>About Us</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="about-content padd-15">
+                            <div class="row">
+                                <div class="about-text padd-15">
+                                    <h3>We are <span>Rockets Team</span> - ALX Innovators</h3>
+                                    <p>Rockets Team is a dynamic group of software engineers and tech innovators from ALX (African Leadership Experience), dedicated to creating impactful solutions that drive technological advancement. Our team specializes in full-stack development, artificial intelligence, and cutting-edge web technologies.</p>
+                                    <p>What sets us apart is our commitment to continuous learning and innovation. Each member of our team brings unique expertise in different areas of technology, allowing us to tackle diverse projects ranging from sophisticated web applications to complex AI solutions. We pride ourselves on our ability to deliver high-quality, scalable solutions while maintaining a strong focus on user experience and technical excellence.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="personal-info padd-15">
+                                    <div class="row">
+                                        <div class="info-item padd-15">
+                                            <p>Founded : <span>2023</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Team Size : <span>10+</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Program : <span>ALX Software Engineering</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Email : <span>alxrockets@gmail.com</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Specialization : <span>Web Development, AI Solutions & Mobile Apps</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Phone : <span>+20 111 4232 202</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="buttons padd-15">
+                                            <a href="#portfolio" onclick="displaySection('service')"
+                                                class="btn">View Our Work</a>
+                                            <a href="#contact" onclick="displaySection('contact')"
+                                                class="btn hire-me">Get in Touch</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skills padd-15">
+                                    <div class="row">
+                                        <div class="skill-item padd-15">
+                                            <h5>Core Competencies</h5>
+                                            <div class="competency-list">
+                                                <div class="competency-item">
+                                                    <i class="fas fa-check-circle"></i>
+                                                    <span>Full-Stack Development</span>
+                                                    <p>Building end-to-end solutions with modern web technologies</p>
+                                                </div>
+                                                <div class="competency-item">
+                                                    <i class="fas fa-check-circle"></i>
+                                                    <span>Community Building</span>
+                                                    <p>Creating platforms that connect and empower tech communities</p>
+                                                </div>
+                                                <div class="competency-item">
+                                                    <i class="fas fa-check-circle"></i>
+                                                    <span>Innovation</span>
+                                                    <p>Developing creative solutions to complex technical challenges</p>
+                                                </div>
+                                                <div class="competency-item">
+                                                    <i class="fas fa-check-circle"></i>
+                                                    <span>Collaboration</span>
+                                                    <p>Working effectively in teams to deliver exceptional results</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="education padd-15">
+                                    <h3 class="title">Our Journey</h3>
+                                    <div class="row">
+                                        <div class="timeline-box padd-15">
+                                            <div class="timeline shadow-dark">
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2023
+                                                    </h3>
+                                                    <h4 class="timeline-title">How We Start It</h4>
+                                                    <p class="timeline-text">Our journey began with a shared passion for technology and innovation, inspired by the ALX Software Engineering program. We came together with a vision to create meaningful solutions and make a difference in the tech industry.</p>
+                                                </div>
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2023
+                                                    </h3>
+                                                    <h4 class="timeline-title">Team Formation</h4>
+                                                    <p class="timeline-text">Established by a group of ambitious ALX Software Engineering students, united by a vision to create innovative solutions and make an impact in the tech industry.</p>
+                                                </div>
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2024
+                                                    </h3>
+                                                    <h4 class="timeline-title">Growth & Innovation</h4>
+                                                    <p class="timeline-text">Expanded our portfolio with diverse projects and strengthened our expertise in web development, AI, and mobile applications, building on our ALX foundation.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="experience padd-15">
+                                    <h3 class="title">Key Projects</h3>
+                                    <div class="row">
+                                        <div class="timeline-box padd-15">
+                                            <div class="timeline shadow-dark">
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2024
+                                                    </h3>
+                                                    <h4 class="timeline-title">ALX Pulse</h4>
+                                                    <p class="timeline-text">ALX Pulse is a dynamic community management platform built for the ALX ecosystem. Designed to bridge the gap between ALX teams and alumni, it streamlines communication, showcases opportunities, and empowers impactful initiatives — all in one central hub. 🚀 <br><span style="font-weight: bold;">It is our self initiative project.</span> It was built to support and scale one of Africa's most vibrant tech communities.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- About Section End -->
+            <!-- Services Section Start -->
+            <section class="service section" id="service">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Our Services</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fa fa-laptop-code"></i>
+                                </div>
+                                <h4>Web Development</h4>
+                                <p>We craft robust, scalable web applications using modern technologies. Our expertise spans full-stack development, creating seamless user experiences with responsive designs and optimized performance. From dynamic websites to complex web applications, we deliver solutions that drive business growth.</p>
+                            </div>
+                        </div>
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fas fa-mobile-alt"></i>
+                                </div>
+                                <h4>Mobile Development</h4>
+                                <p>Specializing in cross-platform mobile applications, we build intuitive and high-performance mobile solutions. Our focus on user-centric design and cutting-edge technologies ensures applications that are both powerful and user-friendly, meeting the demands of today's mobile-first world.</p>
+                            </div>
+                        </div>
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                                <h4>AI Solutions</h4>
+                                <p>We develop intelligent systems that leverage artificial intelligence and machine learning to solve complex problems. Our solutions include predictive analytics, natural language processing, and computer vision applications, helping businesses make data-driven decisions and automate processes.</p>
+                            </div>
+                        </div>
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fas fa-cogs"></i>
+                                </div>
+                                <h4>Internal Systems</h4>
+                                <p>We design and implement custom internal systems that streamline business operations and enhance productivity. Our solutions include enterprise resource planning (ERP), customer relationship management (CRM), and workflow automation systems tailored to your specific business needs.</p>
+                            </div>
+                        </div>
+                        <div class="service-item padd-15">
+                            <div class="service-item-inner">
+                                <div class="icon">
+                                    <i class="fas fa-desktop"></i>
+                                </div>
+                                <h4>Desktop Apps</h4>
+                                <p>We develop powerful desktop applications with intuitive user interfaces and robust functionality. Our desktop solutions provide efficient tools for data management, workflow automation, and complex problem-solving in a desktop environment, ensuring optimal performance and user experience.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Services Section End -->
+            <!-- project Section Start -->
+            <section class="project section" id="project">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Our Projects</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="portfolio-heading padd-15">
+                            <h2>Featured Work</h2>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center" id="cards">
+                        <div class="portfolio-item padd-15">
+                            <div class="portfolio-item-content shadow-dark">
+                                <div class="portfolio-border"></div>
+                                <div class="portfolio-cont">
+                                    <div class="portfolio-item-inner">
+                                        <div class="portfolio-img">
+                                            <img loading="lazy" src="assets/projects/alx-pulse.png" alt="ALX Pulse Platform">
+                                        </div>
+                                        <div class="portfolio-filter">
+                                            <div class="project-btns">
+                                                <a href="https://jazzy-tapioca-10506d.netlify.app/" target="_blank" class="btn">View Project</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-details">
+                                        <h2>🌟ALX Pulse</h2>
+                                        <p>
+                                            <span class="quote">"From self-started to an official ALX collaboration — a vision born from purpose, built to empower."</span>
+                                            <br><br>
+                                            ALX Pulse is a dynamic community management platform crafted by the Rockets Team to empower and streamline the ALX ecosystem. What began as a self-initiated, zero-funding project quickly evolved into a scalable solution designed to connect ALX teams, alumni, and initiatives under one unified hub.
+                                            
+                                            Driven by our deep engagement with the ALX community, we identified a clear need for better coordination, centralized communication, and opportunity visibility. Instead of waiting, we built — launching a platform to meet real community needs.
+                                            
+                                            After successfully pitching our MVP and long-term vision, we secured an official partnership and budget support from ALX, enabling us to scale the platform and expand its capabilities.
+                                        </p>
+                                        <br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Contact Section Start -->
+            <section class="contact section" id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>Contact Us</h2>
+                        </div>
+                    </div>
+                    <h3 class="contact-title padd-15">Have a Project or Idea in Mind?</h3>
+                    <h4 class="contact-sub-title padd-15">Let's Make It Happen Together</h4>
+                    <div class="row justify-content-center">
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-phone"></i></div>
+                            <h4>Call Us On</h4>
+                            <p>+20 111 4232 202</p>
+                        </div>
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fab fa-whatsapp"></i></div>
+                            <h4>Message Us On</h4>
+                            <p>+20 111 4232 202</p>
+                        </div>
+                        <div class="contact-info-item padd-15">
+                            <div class="icon"><i class="fa fa-envelope"></i></div>
+                            <h4>Email</h4>
+                            <p>alxrockets@gmail.com</p>
+                        </div>
+                    </div>
+                    <h3 class="contact-title padd-15">SEND US A MESSAGE</h3>
+                    <h4 class="contact-sub-title padd-15">WE'RE VERY RESPONSIVE TO MESSAGES</h4>
+                    <div class="row">
+                        <div class="contact-form padd-15">
+                            <form id="contactForm">
+                                <div class="row">
+                                    <div class="form-item col-6 padd-15">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="name" placeholder="Name" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-item col-6 padd-15">
+                                        <div class="form-group">
+                                            <input type="email" class="form-control" name="email" placeholder="Email" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                        <div class="form-group">
+                                            <textarea class="form-control" name="message" placeholder="Message" required></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                        <div class="form-group">
+                                            <button type="submit" class="btn">Send Message</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Contact Section End -->
+        </div>
+    </div>
+    <!-- Main Container End -->
+    <!-- Style Switcher Start -->
+    <div class="style-switcher">
+        <div class="style-switcher-toggler s-icon">
+            <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <div class="day-night s-icon">
+            <i class="fas fa-sun"></i>
+        </div>
+        <h4>Theme Colors</h4>
+        <div class="colors">
+            <span class="color-1 pointer" onclick="setActiveStyle('color-1')"></span>
+            <span class="color-2 pointer" onclick="setActiveStyle('color-2')"></span>
+            <span class="color-3 pointer" onclick="setActiveStyle('color-3')"></span>
+            <span class="color-4 pointer" onclick="setActiveStyle('color-4')"></span>
+            <span class="color-5 pointer" onclick="setActiveStyle('color-5')"></span>
+        </div>
+    </div>
+    <!-- Style Switcher End -->
+
+    <!-- jquery -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <!-- bootstrap -->
+    <!-- <script src="./js/bootstrap.bundle.min.js"></script> -->
+    <!-- our javascript -->
+    <script src="js/scrollreveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/styleSwitcher.js"></script>
+</body>
+
+</html>
